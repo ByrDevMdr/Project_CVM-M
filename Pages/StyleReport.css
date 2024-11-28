@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Estilos del encabezado */
+.head{
+    text-align: center;
+    background: #89a5ff;
+    margin-bottom: 30px;
+    width: 100%;
+}
+#Logo{
+    width: 10px;
+    height: 10px;    
+}
+#Logo img{
+    width: 90px;
+    height: 90px;
+}
+#Titulo{
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+#ContentBtn{
+    width: 100px;
+}
+#ContentBtn #Regresar{
+    vertical-align: middle;
+    height: 30px;
+    background: rgb(255, 255, 0);
+    width: 90px;
+    font-size: 15px;
+    border-radius: .6em;
+    border: none;
+}
+#Regresar a{
+    color: black;
+    text-decoration: none;
+}
+#Regresar:hover{
+    opacity: 80%;
+    cursor: pointer;
+}
+#Logotipo{
+    margin-left: 75%;
+    height: 350px;
+    width: 350px;
+}
+/* Inicio de los estilos del cuerpo */
+#Message{
+    /* border: solid rgb(36, 26, 78); */
+    background:linear-gradient(to right, rgba(82, 82, 190, 0.342), rgba(150, 59, 59, 0.322));
+    padding: 10px;
+    border-radius: .9em;
+    width: 30%;
+}
+#Msg{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+}
+#ContentPrimary{
+    background: linear-gradient(to bottom, #f7e928ad, #b1a877);
+    height: 300px;
+    margin: 20px 30px;
+    padding: .4em;
+    text-align: center;
+}
+#ContentTitle{
+    margin: 10px;
+}
+#TittleBody{
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px;
+}
+#ContentForm{
+    background: rgba(127, 178, 255, 0.801);
+    text-align: start;
+    margin: 0 30px;
+    border-radius: .9em;
+}
+#Form{
+    margin-left: 20px;
+    padding: .9em;
+}
+input{
+    font-size: 18px;
+    border-radius: .4em;
+    border: none;
+}
+.BreakRow{
+    margin-bottom: 30px;
+    width: 300px;
+}
+.TitleReq{
+    font-size: 20px;
+}
+#ContentBtnForm{
+    width: 45%;
+}
+#BtnA{
+    background: rgb(181, 218, 126);
+    margin-right: 30px;
+    transition: all .3s;
+}
+#BtnA i{
+    color: green;
+    font-size: 20px;
+}
+#BtnA:hover{
+    background: rgb(155, 211, 71);
+    margin-right: 30px;
+    transition: all .3s;
+    cursor: pointer;
+}
+#BtnB{
+    background: rgb(180, 180, 180);
+    transition: all .3s;
+}
+#BtnB:hover{
+    background: rgb(223, 222, 222);
+    cursor: pointer;
+    transition: all .3s;
+}
+#BtnXML:hover{
+    transition: all .3s;
+    background: rgb(247, 207, 134);
+}
+.BtnForm{
+    width: 3cm;
+    padding: .2em;
+    color: black;
+    border: none;
+    border-radius: .4em;
+    font-size: 17px;
+}
+.BtnForm a{
+    text-decoration: none;
+    color: black;
+}
+#BtnXML{
+    margin-left: 20px;
+    transition: all .3s;
+    width: 200px;
+    background: rgb(238, 208, 73);
+}
+
+@media only screen and (max-width: 1080px){
+        /* body{
+            background: red;
+        } */
+        #Logo{
+            width: 10px;
+            height: 10px;    
+        }
+        #Logo img{
+            width: 50px;
+            height: 50px;
+        }
+        #Titulo{
+            /* background: red; */
+            font-size: 16px;
+            font-family: 'Roboto', sans-serif;
+        }
+        #ContentBtn{
+            width: 10px;
+        }
+        #ContentBtn #Regresar{
+            vertical-align: middle;
+            height: 25px;
+            background: rgb(255, 255, 143);
+            width: 70px;
+            font-size: 12px;
+            border-radius: .6em;
+            border: none;
+        }
+        #Message{
+            /* border: solid rgb(36, 26, 78); */
+            background:linear-gradient(to right, rgba(82, 82, 190, 0.342), rgba(150, 59, 59, 0.322));
+            padding: 10px;
+            border-radius: .9em;
+            width: 90%;
+        }
+        #Msg{
+            font-family: "Roboto", sans-serif;
+            font-size: 18px;
+        }
+        #ContentPrimary{
+            background: #dacf37ad;
+            height: 350px;
+            margin: 20px 4px;
+            padding: .2em;
+            text-align: center;
+            border-radius: .3em;
+        }
+        #ContentTitle{
+            margin: 10px;
+        }
+        #TittleBody{
+            text-align: center;
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 20px;
+        }
+        #ContentForm{
+            background: rgba(174, 205, 252, 0.801);
+            text-align: start;
+            margin: 0 10px;
+            border-radius: .9em;
+        }
+        #Form{
+            margin-left: 20px;
+            padding: .3em;
+        }
+        input{
+            font-size: 13px;
+            border-radius: .4em;
+            border: none;
+        }
+        
+        #BtnB{
+            background: rgb(180, 180, 180);
+            transition: all .3s;
+        }
+        .BtnForm{
+            width: 3cm;
+            padding: .2em;
+            color: black;
+            border: none;
+            border-radius: .4em;
+            font-size: 15px;
+            margin: 10px 0;
+        }
+        .BtnForm a{
+            text-decoration: none;
+            color: black;
+        }
+        #BtnXML{
+            margin-left: -1px;
+            transition: all .3s;
+            width: 200px;
+            background: rgb(238, 208, 73);
+        }       
+}

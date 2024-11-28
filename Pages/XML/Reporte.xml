@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Reportes>
+  <Reporte>
+    <Id>3</Id>
+    <Fecha>2024-03-25</Fecha>
+    <Nombre>Javier</Nombre>
+    <Pedidos>1</Pedidos>
+    <Ganancias>$1500</Ganancias>
+    <Direccion>Zapopan</Direccion>
+    <Telefono>3310090912</Telefono>
+    <Correo>T2@gmail.com</Correo>
+  </Reporte>
+<Reporte><Id>3</Id><Fecha>2024-03-22</Fecha><Nombre>Javier</Nombre><Pedidos>2</Pedidos><Ganancias>$1500</Ganancias><Direccion>Zapopan</Direccion><Telefono>3310090912</Telefono><Correo>T2@gmail.com</Correo></Reporte><Reporte><Id>3</Id><Fecha>2024-04-26</Fecha><Nombre>Javier</Nombre><Pedidos>1</Pedidos><Ganancias>$3000</Ganancias><Direccion>Zapopan</Direccion><Telefono>3310090912</Telefono><Correo>T2@gmail.com</Correo></Reporte></Reportes>

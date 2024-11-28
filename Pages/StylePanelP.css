@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+    background: rgb(255, 243, 210);
+}
+#Head{
+    width: 100%;
+}
+.head{
+    text-align: center;
+    background: #f1e5da;
+}
+#Logo{
+    width: 10px;
+    height: 10px;    
+}
+#Logo img{
+    width: 90px;
+    height: 90px;
+}
+#ContentTitulo #Titulo{
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+#ContentBtn{
+    width: 100px;
+}
+#ContentBtn #Regresar{
+    vertical-align: middle;
+    height: 30px;
+    background: rgb(255, 255, 143);
+    width: 70px;
+    font-size: 15px;
+    border-radius: .6em;
+}
+#Regresar a{
+    color: black;
+    text-decoration: none;
+}
+#Regresar:hover{
+    opacity: 80%;
+    cursor: pointer;
+}
+#ContenidoRol{
+    margin-top: 10px;
+    text-align: end;
+    width: 100%;
+}
+#ContentRol{
+    width: 30%;
+    background: whitesmoke;
+    padding: .3em;
+}
+#ContentMenu{
+    width:97%;
+}
+#MenuOpc{
+    position: fixed;
+    background:#b7950b;
+    width: 80cm;
+    border-radius:.2em;
+    border:solid #983D3D;
+    left:1110px;
+    display: none;
+    border-radius:.5em;
+    z-index: 1; /*Determina el grado de jerarquia que se le da a un objeto o contenedor en el eje z para determinar si se mostrara por encima o por debajo de otros elementos*/
+}
+#ContentMenu i{
+    color: rgb(255, 255, 255);
+    background: #292919;
+    padding: .6em;
+    border-radius: .5em;
+    font-size: 20px;
+    transition: all .3s;
+}
+#ContentMenu i:hover{
+    transition: all .3s;
+    color: rgba(255, 255, 255, 0.473);
+    background: #29291962;
+    padding: .6em;
+    border-radius: .5em;
+    font-size: 20px;
+    cursor: pointer;
+}
+#Rol{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-right: 40px;
+}
+#Contenido{
+    text-align: center;
+}
+#TituloP{
+    font-weight: 600;
+    font-family: 'Afacad', sans-serif;
+    font-size: 30px;
+}
+#ContenidoP{
+    width: 90%;
+    margin-top: 30px;
+}
+#ContentTable{
+    background-color: rgba(70, 124, 168, 0.459);
+    margin: 0 10px;
+}
+.ContCard{
+    text-align: center;
+}
+#SecondCard{
+
+    margin-top: 30px;
+}
+.contenedor{
+    margin-left: 110px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+}
+.contenedorr{
+    margin-left: 110px;
+    text-align: center;
+    width: 50%;
+    display: flex;
+    max-width: 1100px;
+}
+.card{
+    background: #b4891257;
+    border: solid rgb(187, 160, 126);
+    width: 700%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2); /*Añade una sombra a la caja del contenedor de la imagen*/
+    transition: all 400ms ease; /*Deja una transición para volver a su estado normal despues del efecto hover*/
+}
+.card:hover{
+    background:#aa9c72d0;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); /*Se le añade un efecto de sobra más grande cuando se le pasa el cursor*/
+    transform: translateY(.2%);
+}
+.card img{
+    box-shadow: 5px 5px 10px rgba(236, 173, 37, 0.3);
+    border-radius: 1em;
+    padding: .6em;
+    background: #ffbb0046;
+    width: 200px;
+    height: 200px;
+}
+.card img:hover{
+    background: #dfb33b;
+}
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+}
+.card .contenido span{
+    line-height: 1.5;
+}
+.card .contenido h3{
+    text-decoration: underline;
+    font-weight: 1000;
+    font-size: 2em;
+    font-family: 'Kanit', sans-serif;
+}
+.card .contenido a{
+    width: 30%;
+    font-size: 1em;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #e3e4dc;
+    border: 1px solid #332e10;
+    background: #292919;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+.card .contenido a:hover{
+    background:gainsboro;
+    color:#332e10;
+    border: 2px solid #332e10;
+}

@@ -1,0 +1,156 @@
+#Encabezado{
+    background: -webkit-linear-gradient(to right, #fffb00, #272910); 
+    background: linear-gradient(to right, #fdffa1, #f1d761); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    top: 0px;
+}
+#Encabezado img{
+    width: 80px;
+    height: 70px;
+    margin-left: 60px;
+    /*margin-top: -5px;
+    */padding-bottom: 0px;
+}
+#Regresar{
+    background: rgb(201, 209, 255);
+    padding: .3em;
+    border-radius: .9em;
+    border: none;
+    width: 120px;
+}
+#Regresar i{
+    font-size: 20px;
+}
+#Regresar a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+#Regresar:hover{
+    background: rgb(178, 188, 248);
+    transition: all 400ms ease;
+}
+.Content{
+    width:50%;
+}
+#Titulo{
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+}
+#file-list{
+    padding: .9em;
+    background: rgb(220, 242, 255);
+    margin: 20px 20px;
+    /* list-style: none; */
+}
+#file-list ul{
+    list-style: none;
+}
+#NameFile{
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#ContentFile{
+    margin: 30px 0px;
+}
+#File{
+    /* color: green; */
+    background: rgba(196, 196, 196, 0.452);
+    padding: .6em;
+    border-radius: .6em;
+}
+.ContentRef{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#BtnOpen{
+    background: rgb(95, 144, 184);
+    margin: 0px 20px;
+    vertical-align: middle;
+    border: none;
+    padding: .4em;
+    transition: all .3s;
+    border-radius: .4em;
+}
+#BtnOpen i{
+    color: rgb(253, 253, 253);
+}
+#BtnOpen:hover{
+    opacity: 70%;
+    cursor: pointer;
+    transition: all .3s;
+}
+#Message{
+    color:green;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 10px;
+    background: rgba(172, 255, 47, 0.61);
+    padding: .4em;
+    border-radius: .6em;
+}
+.BreakRow{
+    display: none;
+}
+@media only screen and (max-width:1080px){
+    /* body{
+        background: red;
+    } */
+    /* Diseño responsivo para el modal */
+    #Encabezado img{
+        width: 70px;
+        height: 70px;
+        margin-left: 10px;
+        /*margin-top: -5px;
+        */padding-bottom: 0px;
+    }
+    #ContentLogo{
+        /* background: grey; */
+        width: 25%;
+    }
+    #ContentTitulo{
+        /* background: green; */
+        text-align: center;
+    }
+    
+    #Regresar{
+        background: rgb(201, 209, 255);
+        padding: .3em;
+        border-radius: .9em;
+        width: 85px;
+    }
+    #Regresar i{
+        font-size: 17px;
+    }
+    #Regresar a{
+        color: black;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    #Titulo{
+        font-family: 'Raleway', sans-serif;
+        font-size: 17px;
+        color: rgb(0, 0, 0);
+        font-weight: 600;
+    }
+    #File{
+        background: none;
+        font-size: 14px;
+    }
+    #file-list{
+        padding: .1em;
+    }
+    .BreakRow{
+        display: inline;
+    }
+    #Seg{
+        display: none;
+    }
+    /* hr{
+        width: 100%;
+    } */
+}

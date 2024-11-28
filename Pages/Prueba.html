@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista general de productos</title>
+    <link rel="shortcut icon" href="../Img/Logo_Carp.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="StyleVistaProductos.css">
+</head>
+<body>
+    <header id="Encabezado" class="bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2" id="Logo">
+                    <img src="../Img/Logo.png" alt="LogoTipo" class="img-fluid">
+                </div>
+                <div class="col-md-8 text-center">
+                    <h2 class="my-4">Vista general de nuestros productos</h2>
+                </div>
+                <div class="col-md-2 text-right">
+                    <button id="Regresar" class="btn btn-light">
+                        <i class="fas fa-arrow-left"></i>
+                        <a href="../index.php" class="text-dark">Regresar</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="Busqueda mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1">
+                    <label for="Busqueda" class="h-100"><i class="fas fa-search"></i></label>
+                </div>
+                <div class="col-md-11">
+                    <input id="Busqueda" name="Busqueda" type="text" class="form-control" placeholder="Busqueda general">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Fila 1 -->
+            <div class="col-md-3 mb-4">
+                <label for="">Nombre: Cómoda de 3 cajones lisa. </label>
+                        <hr>
+                        <br>
+                        <img src="../Img/Cómoda3C.png" alt="Cómoda de 3 cajones." class="img-fluid rounded mx-auto d-block" style="max-width: 100%;">
+                        <br>
+                        <div class="Decripcion">Cómoda elaborada con madera de pino de 3 cajones estilo rustico liso.</div>
+                        <br>
+                        <button class="Agregar">Agregar al carrito</button>
+            </div>
+            <div class="col-md-3 mb-4">
+                <!-- Contenido del producto 2 -->s
+            </div>
+            <div class="col-md-3 mb-4">
+                <!-- Contenido del producto 3 -->sa
+            </div>
+            <div class="col-md-3 mb-4">
+                <!-- Contenido del producto 4 -->a
+            </div>
+            <!-- Fila 2 -->
+            <!-- Repite la misma estructura para las filas restantes -->
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

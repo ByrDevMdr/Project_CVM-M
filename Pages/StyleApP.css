@@ -1,0 +1,440 @@
+/*Estilos del encabezado*/
+#Head{
+    width: 100%;
+}
+body{
+    background: rgb(255, 255, 211);
+}
+.head{
+    /* top: -10px; */
+    text-align: center;
+    background: #d1b361;
+    margin-bottom: 30px;
+}
+#ContentNoClient{
+    background: rgba(255, 218, 149, 0.253);
+    padding: .7em;
+    border-radius: 10px 10px;
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+#Logo{
+    width: 10px;
+    height: 10px;    
+}
+#Logo img{
+    width: 90px;
+    height: 90px;
+}
+#ContentTitulo #Titulo{
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+#ContentBtn{
+    width: 100px;
+}
+#ContentBtn #Regresar{
+    vertical-align: middle;
+    height: 30px;
+    background: rgb(255, 255, 143);
+    width: 90px;
+    font-size: 15px;
+    border-radius: .6em;
+    border: none;
+}
+#Regresar a{
+    color: black;
+    text-decoration: none;
+}
+#Regresar:hover{
+    opacity: 80%;
+    cursor: pointer;
+}
+#Logotipo{
+    margin-left: 75%;
+    height: 350px;
+    width: 350px;
+}
+/* Inicio de los esilos */
+/* Estilos del modal */
+.Dato{
+    background: rgb(162, 124, 199);
+    padding: .5em;    
+}
+.BtnEdit{
+    background: rgb(255, 198, 198);
+    padding: 0 .3em;
+}
+.custom-modal {
+    font-size: 20px;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.InputForm{
+    background: rgb(253, 253, 253);
+    font-size: 17px;
+    border-radius: .4em;
+    border: none;
+    padding: .2em;
+}
+.InputForm:focus{
+    outline: none;
+}
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(233, 255, 193);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Kanit', sans-serif;
+}
+
+.ModalHead {
+    background: gray;
+    padding: .4em;
+    margin-bottom: 10px;
+    border-radius: .3em;
+}
+#CloseModalDn{
+    cursor: pointer;
+}
+#BtnReady{
+    background: #56d474;
+    transition: all .3s;
+    margin-top: 10px;
+}
+#BtnReady:hover{
+    background: #93d3a2;
+    cursor: pointer;
+    transition: all.3s;
+}
+#BtnClose{
+    background: rgb(252, 139, 139);
+}
+#BtnClose:hover{
+    background: rgb(255, 178, 178);
+    cursor: pointer;
+}
+#DeleteProd{
+    margin-top: 10px;
+    background: #ffc086;
+}
+#DeleteProd:hover{
+    cursor: pointer;
+    background: #ffcc9c;
+}
+.BtnFromModal{
+    padding: 8px 15px; 
+    border-radius: .4em;
+    border:none;
+}
+.modal-title{
+    font-size: 24px;
+}
+.modal-footer {
+    text-align: right;
+}
+/* Fin de estilos del modal */
+/* Estilos del contenido principal */
+.HeadTable{
+    background: #ffc086;
+    padding: .2em;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    border-radius: .2em;
+}
+.ContentDato{
+    background: rgb(207, 207, 207);
+    padding: .4em .3em;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    border-radius: .1em;
+}
+#BtnDetalles{
+    background: #a5baff;
+    padding: .3em;
+    border: none;
+    border-radius: .3em;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    transition: all .3s;
+}
+#BtnDetalles:hover{
+    transition: all .3s;
+    background: #89a5ff;
+    cursor: pointer;
+    /* font-weight: 700; */
+}
+#ContentTable{
+    background: rgb(124, 123, 76);
+    padding: .4em;
+    border-radius: 1.5em;
+}
+#UserList{
+    margin: 10px 15%;
+    font-size: 19px;
+    border: solid rgb(104, 1, 1);
+    padding: .2em;
+    box-shadow: 1px 3px 30px rgb(151, 151, 151);
+    border-radius: .3em;
+}
+/* Estilos del modal de confirmación */
+#Modal{
+    display: none;
+}
+#ModalBack{
+    position: fixed;
+    background: rgba(187, 187, 187, 0.603);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+#ModalContent{
+    width: 400px;
+    background: white;
+    text-align: center;
+    margin: 20%;
+    margin-left: 33%;
+    padding: 1em;
+    border-radius: .3em;
+    border: solid rgb(92, 92, 92);
+}
+#MessageCorrect{
+    font-family: 'Capriola', sans-serif;
+    font-size: 20px;
+    padding: 0 .3em ;
+    background: grey;
+}
+#Correct{
+    color: green;
+    font-size: 40px;
+    margin: 10px;
+}
+#MessageModalBody{
+    font-size: 16px;
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+}
+@media only screen and (max-width: 1080px){
+    .head{
+        padding: .2em;
+    }
+    #Logo{
+        width: 10px;
+        height: 10px;    
+    }
+    #Logo img{
+        width: 50px;
+        height: 50px;
+    }
+    #ContentTitulo #Titulo{
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+    }
+    #ContentBtn{
+        width: 10px;
+    }
+    #ContentBtn #Regresar{
+        vertical-align: middle;
+        height: 25px;
+        background: rgb(255, 255, 143);
+        width: 70px;
+        font-size: 12px;
+        border-radius: .6em;
+        border: none;
+    }
+    .HeadTable{
+        background: #ffc086;
+        padding: .2em;
+        font-size: 15px;
+        font-family: 'Raleway', sans-serif;
+        border-radius: .2em;
+    }
+    .ContentDato{
+        background: rgb(207, 207, 207);
+        padding: .2em .3em;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 600;
+        border-radius: .1em;
+        font-size: 14px;
+    }
+    #BtnDetalles{
+        background: #a5baff;
+        padding: .3em;
+        border: none;
+        border-radius: .3em;
+        font-size: 16px;
+        font-family: 'Inter', sans-serif;
+        transition: all .3s;
+    }
+    #BtnDetalles:hover{
+        transition: all .3s;
+        background: #89a5ff;
+        cursor: pointer;
+        font-weight: 700;
+    }
+    #ContentTable{
+        background: rgb(124, 123, 76);
+        padding: .1em;
+        border-radius: 1.5em;
+        overflow: auto;
+    }
+    #UserList{
+        margin: 10px 0;
+        font-size: 11px;
+        border: solid rgb(104, 1, 1);
+        padding: .2em;
+        box-shadow: 1px 3px 30px rgb(151, 151, 151);
+        border-radius: .3em;
+    }
+    .Dato{
+        background: rgb(162, 124, 199);
+        padding: .5em;    
+    }
+    .BtnEdit{
+        background: rgb(255, 198, 198);
+        padding: 0 .3em;
+    }
+    .custom-modal {
+        font-size: 15px;
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    .InputForm{
+        background: rgb(253, 253, 253);
+        font-size: 13px;
+        border-radius: .4em;
+        border: none;
+        padding: .2em;
+    }
+    .InputForm:focus{
+        outline: none;
+    }
+    .modal-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .modal-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgb(233, 255, 193);
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        font-family: 'Kanit', sans-serif;
+        width: 80%;
+    }
+    
+    .ModalHead {
+        background: gray;
+        padding: .4em;
+        margin-bottom: 10px;
+        border-radius: .3em;
+    }
+    #CloseModalDn{
+        cursor: pointer;
+    }
+    #BtnReady{
+        font-size: 13px;
+        background: #56d474;
+        transition: all .3s;
+        margin-top: 10px;
+    }
+    #BtnReady:hover{
+        background: #93d3a2;
+        cursor: pointer;
+        transition: all.3s;
+    }
+    #BtnClose{
+        font-size: 13px;
+        background: rgb(252, 139, 139);
+    }
+    #BtnClose:hover{
+        background: rgb(255, 178, 178);
+        cursor: pointer;
+    }
+    #DeleteProd{
+        font-size: 13px;
+        margin-top: 10px;
+        background: #ffc086;
+    }
+    #DeleteProd:hover{
+        cursor: pointer;
+        background: #ffcc9c;
+    }
+    .BtnFromModal{
+        padding: 8px 15px; 
+        border-radius: .4em;
+        border:none;
+    }
+    .modal-title{
+        font-size: 14px;
+    }
+    .modal-footer {
+        text-align: right;
+    }
+    #Modal{
+        display: none;
+    }
+    #ModalBack{
+        position: fixed;
+        background: rgba(187, 187, 187, 0.603);
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+    }
+    #ModalContent{
+        width: 200px;
+        background: white;
+        text-align: center;
+        margin: 40% auto;
+        padding: 1em;
+        border-radius: .3em;
+        border: solid rgb(92, 92, 92);
+    }
+    #MessageCorrect{
+        font-family: 'Capriola', sans-serif;
+        font-size: 20px;
+        padding: 0 .3em ;
+        background: grey;
+    }
+    #Correct{
+        color: green;
+        font-size: 40px;
+        margin: 10px;
+    }
+    #MessageModalBody{
+        font-size: 16px;
+        font-weight: 800;
+        font-family: 'Open Sans', sans-serif;
+    }
+}

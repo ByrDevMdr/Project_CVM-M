@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de muebles</title>
+    <!--Enlace para la tipografía-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,500;1,200;1,700&display=swap" rel="stylesheet">
+    <!-- Enlace con lahoja de estilos correspondiente-->
+    <link rel="stylesheet" href="StyleType1.css">
+    <!--Cambiar el icono de la página en la pestaña superior de búsqueda-->
+    <link rel="shortcut icon" href="../Img/LogoCarpFavicon.png" type="image/x-icon">
+    <!--Enlace a fontawesome para la obtención de iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="Titulo">
+        <span id="Title">Tipos de muebles a disposición</span>
+    </div>
+    <section class="Tarjetas">
+        <article class="Tarjeta">
+            <img src="../Img/Categoria1.jpg" alt="Categoría1">
+            <div class="Contenido">
+            Aquí podras encontrar distintos tipos de burós...
+            <p> Explora nuestros distintos productos de esta categoría!! </p>
+            <p id="NameCategoria">Burós</p>
+            <a href="Buros.php">Explorar</a>
+            </div>
+        </article>
+
+        <article class="Tarjeta2">
+            <img src="../Img/Categoria2.jpg" alt="Categoría2">
+            <div class="Contenido">
+            Contamos con distinos diseños y tamaños de Credenzas.
+            <p> Explora nuestros distintos productos de esta categoría!! </p>
+            <p id="NameCategoria">Credenzas</p>
+            <a href="Credenzas.php">Explorar</a>
+            </div>
+        </article>
+
+        <article class="Tarjeta">
+            <img src="../Img/Categoria3.jpg" alt="Categoría3">
+            <div class="Contenido">
+            Contamos con distintas medidas de comódas. Escoje la ideal!
+            <p> Explora nuestros distintos productos de esta categoría!! </p>
+            <p id="NameCategoria">Comódas</p>
+            <a href="Cómodas.php">Explorar</a>
+            </div>
+        </article>
+        <article class="Tarjeta2">
+            <img src="../Img/Categoria4.jpg" alt="Categoría3">
+            <div class="Contenido">
+            Tenemos distintos tipos de marcos con detalles unicos!
+            <p> Explora nuestros distintos productos de esta categoría!! </p>
+            <p id="NameCategoria">Marcos</p>
+            <a href="Marcos.php">Explorar</a>
+            </div>
+        </article>
+        <article class="Tarjeta">
+            <img src="../Img/Categoria5.jpg" alt="Categoría3">
+            <div class="Contenido">
+            Encuentre modelos únicos en esta categoria!
+            <p> Explora nuestros distintos productos de esta sub-categoría!! </p>
+            <p id="NameCategoria">Otros</p>
+            <a href="Otros.php">Explorar</a>
+            </div>
+        </article>
+<!--
+        <article class="Tarjeta" style="margin-bottom: 50px;">
+            <img src="../Img/Categoria1.jpg" alt="Categoría4">
+            <div class="Contenido">
+            Revise los demás tipos de muebles con los que contamos!!
+            <p> Explora nuestros distintos productos de esta categoría!! </p>
+            <p id="NameCategoria">Categoría: Otros</p>
+            <a href="#">Explorar</a>
+            </div>
+        </article>
+    </section>
+-->
+    <section id="Btn_Regresar">
+        <button type="button">
+            <i class="fa-solid fa-arrow-left"></i>
+            <a href="../index.php">Regresar</a>     
+        </button>
+    </section>
+    <span id="TitleRC">Redes sociales:</span>
+    <footer class="footer">
+        <span id="Contactos"><i class="fas fa-phone-volume" id="PhoneI"></i> Redes sociales y contactos: <i class="fas fa-sort-down" id="Desplegable"></i><i class="fas fa-sort-up" id="Hide"></i></span>
+        <div id="ContentRedesS">
+        <div class="contact">Facebook:</div> <a id="Fb" href="http://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+        <div class="contact">Whatsapp:</div> <a id="Wpp" href="https://wa.me/3310748691"><i class="fab fa-whatsapp"></i></a>
+        <div class="contact">Correo:</div> <a id="Correo" href="https://mail.google.com/mail/u/0/?subject=Cuesti%C3%B3n&body=Contenido+del+mensaje#inbox?compose=CllgCJNsMRSWjrMHtrKbVwKdSXRCCjbhXBXRJfPVHjcWNcTmMpfkBCqJcpzNtCQZrXmSHzqvZlV"><i class="fas fa-envelope-open-text"></i></a>
+        <div class="contact">Teléfono:</div> <a id="Num" href="tel:3336911882">3336911882</a>
+    </div>
+    </footer>
+    <footer id="Down">-</footer>
+        <script>
+        var DesplegableRedSocial=document.getElementById('Desplegable');
+        var Contactos=document.getElementById('ContentRedesS');
+        var DesG=document.getElementById('Contactos');
+        var Hide = document.getElementById('Hide');
+        var isVisible = false; // Variable para rastrear el estado de Contactos
+        var Bad = false;
+        document.addEventListener('DOMContentLoaded', function () {
+
+        DesG.addEventListener('click', function () {
+        if (!isVisible) { // Si Contactos no está visible, se muestra con fadeIn
+            isVisible = true; // Actualiza el estado
+            Contactos.style.display = "block";
+            Contactos.style.animation = "fadeIn 1s forwards";
+            DesplegableRedSocial.style.display = "none";
+            Hide.style.display = "inline-block";
+        } else { // Si Contactos está visible, se oculta con fadeOut
+            Contactos.style.animation = "fadeOut 1s forwards";
+            Hide.style.display = "none";
+            // Restaura los otros elementos relacionados
+            DesplegableRedSocial.style.display = "inline-block";
+
+        // Escucha el evento de finalización de la animación de fadeOut
+        Contactos.addEventListener('animationend', function () {
+        // Oculta completamente el elemento Contactos y restaura su animación
+        if(isVisible=false){
+            Contactos.style.display = "none";
+            Contactos.style.animation = "";
+            isVisible = false; // Actualiza el estado
+        }
+
+        });
+        }
+        });
+
+
+        DesplegableRedSocial.addEventListener('click', function () {
+            isVisible=true;
+            Contactos.style.display = "block";
+            Contactos.style.animation = "fadeIn 1s forwards"; // Aplica la animación de fadeIn
+            DesplegableRedSocial.style.display = "none";
+            Hide.style.display = "inline-block";
+        });
+
+        Hide.addEventListener('click', function () {
+            isVisible=false;
+
+            Contactos.style.animation = "fadeOut 1s forwards"; // Aplica la animación de fadeOu
+        // Oculta el elemento después de que termine la animación
+
+        Contactos.addEventListener('animationend', function () {
+            if(isVisible=false){
+                Contactos.style.display = "none";   
+            }
+        });
+            DesplegableRedSocial.style.display = "inline-block";
+            Hide.style.display = "none";
+        });
+        });
+    </script>
+</body>
+</html>

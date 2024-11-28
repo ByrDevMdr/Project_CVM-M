@@ -1,0 +1,214 @@
+.head{
+    text-align: center;
+    background: #dfd7cf;
+    margin-bottom: 30px;
+    width: 100%;
+}
+#Logo{
+    width: 10px;
+    height: 10px;    
+}
+#Logo img{
+    width: 90px;
+    height: 90px;
+}
+#Titulo{
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+#ContentBtn{
+    width: 100px;
+}
+#ContentBtn #Regresar{
+    vertical-align: middle;
+    height: 30px;
+    background: rgb(255, 255, 0);
+    width: 90px;
+    font-size: 15px;
+    border-radius: .6em;
+    border: none;
+}
+#Regresar a{
+    color: black;
+    text-decoration: none;
+}
+#Regresar:hover{
+    opacity: 80%;
+    cursor: pointer;
+}
+#Logotipo{
+    margin-left: 75%;
+    height: 350px;
+    width: 350px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.file-list {
+    list-style-type: none;
+    padding: 0;
+}
+.file-list li {
+    margin: 10px 0;
+}
+.file-list img {
+    max-width: 100px;
+    display: block;
+    margin-bottom: 5px;
+    border-radius: .4em;
+}
+.Content{
+    background: rgba(170, 170, 170, 0.329);
+    padding: .4em;
+    border-radius: 1em;
+}
+#OpenFile{
+    /* background: red; */
+    border: none;
+    border-radius: .4em;
+    padding: .4em;
+    background: rgb(175, 255, 138);
+    margin: 10px 20px;
+    transition: all .3s;
+
+}
+#Modal{
+    display: none;
+}
+.ModalBack{
+    z-index: 2;
+    position: fixed;
+    background: rgba(187, 187, 187, 0.603);
+    width: 100%;
+    height: 100%;
+}
+.ModalContent{
+    width: 400px;
+    background: white;
+    text-align: center;
+    margin: 15%;
+    margin-left: 33%;
+    padding: 1em;
+    border-radius: .3em;
+    border: solid rgb(92, 92, 92);
+}
+.MessageCorrect{
+    font-family: 'Capriola', sans-serif;
+    font-size: 20px;
+    padding: 0 .3em ;
+    background: grey;
+}
+#Correct{
+    color: green;
+    font-size: 40px;
+    margin: 10px;
+}
+
+.MessageModalBody{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+#OpenFile:hover{
+    transition: all .3s;
+    opacity: 70%;
+}
+#OpenFile a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#PdfVist{
+    border-radius: .4em;
+}
+#BtnDelete{
+    /* background: red; */
+    border: none;
+    border-radius: .4em;
+    padding: .4em;
+    background: rgb(255, 175, 138);
+    margin: 10px 20px;
+    transition: all .3s;
+}
+#BtnDelete:hover{
+    cursor: pointer;
+    opacity: 70%;
+    transition: all .3s;
+}
+#BtnValidate{
+    border: none;
+    border-radius: .4em;
+    padding: .4em;
+    background: rgb(138, 255, 157);
+    margin: 10px 20px;
+    transition: all .3s;
+}
+#BtnValidate:hover{
+    cursor: pointer;
+    opacity: 70%;
+    transition: all .3s;
+}
+@media only screen and (max-width: 1080px){
+    #Logo{
+        width: 10px;
+        height: 10px;    
+    }
+    #Logo img{
+        width: 50px;
+        height: 50px;
+    }
+    #Titulo{
+        /* background: red; */
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+    }
+    #ContentBtn{
+        width: 10px;
+    }
+    #ContentBtn #Regresar{
+        vertical-align: middle;
+        height: 25px;
+        background: rgb(255, 255, 143);
+        width: 70px;
+        font-size: 12px;
+        border-radius: .6em;
+        border: none;
+    }
+    #Modal{
+        display: none;
+    }
+    .ModalBack{
+        z-index: 2;
+        position: fixed;
+        background: rgba(187, 187, 187, 0.603);
+        width: 100%;
+        height: 100%;
+    }
+    .ModalContent{
+        width: 80%;
+        background: white;
+        text-align: center;
+        margin: 15%;
+        margin-left: 4%;
+        padding: .6em;
+        border-radius: .3em;
+        border: solid rgb(92, 92, 92);
+    }
+    .MessageCorrect{
+        font-family: 'Capriola', sans-serif;
+        font-size: 20px;
+        padding: 0 .3em ;
+        background: grey;
+    }
+    #Correct{
+        color: green;
+        font-size: 40px;
+        margin: 10px;
+    }
+    #Name{
+        font-size: 16px;
+        /* margin-right: 18px; */
+    }
+}

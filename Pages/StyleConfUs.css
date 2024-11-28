@@ -1,0 +1,559 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #ffffff;
+}
+#Encabezado{
+    background: -webkit-linear-gradient(to right, #fffb00, #272910); 
+    background: linear-gradient(to right, #fdffa1, #f1d761); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    top: 0px;
+}
+#Encabezado img{
+    width: 90px;
+    height: 70px;
+    margin-left: 60px;
+    /*margin-top: -5px;
+    */padding-bottom: 0px;
+}
+#Regresar{
+    background: rgb(201, 209, 255);
+    padding: .3em;
+    border-radius: .9em;
+
+    width: 120px;
+}
+#Regresar i{
+    font-size: 20px;
+}
+#Regresar a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+#Regresar:hover{
+    background: rgb(178, 188, 248);
+    transition: all 400ms ease;
+}
+.Content{
+    width:50%;
+}
+#Titulo{
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+}
+.Panel{
+    margin: 30px 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background: #cccccc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #d4d4d1, #7e7e7e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #a7a59c, #b8b8b8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 1em;
+}
+.Panel i{
+    text-align: end;
+}
+
+.Tittle{
+    /* background: linear-gradient(to right, #804e03, #d4d4d4); */
+    background: rgb(247, 200, 47);
+    border-top: solid rgba(255, 0, 0, 0.253);
+    border-radius: .7em;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+/*
+.BtnModify{
+    left: 100px;
+    background-color: #008cff;
+    padding: .3em;
+    border-radius: .9em;
+    border: none;
+    width: 120px;
+    font-size: .9em;
+    transition: all 100ms ease;
+}
+.BtnModify i{
+    padding: 0 .3em;
+}
+.BtnModify:hover{
+    transition: all 100ms ease;
+    background-color: #67bbff;
+    cursor: pointer;
+} */
+.TituloAr{
+    margin-right: 100px;
+    font-size: 22px;
+    border-radius: .3em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+.Dato{
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.5em;
+    background: #f0ffce;
+    border-radius: .2em;
+    border-top: solid black;
+    display: flex;
+    flex-direction: row;
+}
+.Dato .TitleSection{
+    text-align: end;
+}
+.TitleSection{
+    width: 50%;
+    text-align: end;
+}
+.Ico{
+    position: relative;
+    display: inline;
+    text-align: end;
+    width: 50%;
+}
+.fa-pen-to-square{
+    color: rgb(80, 80, 80);
+    font-size: 23px;
+}
+.fa-pen-to-square:hover{
+    color: rgb(63, 63, 63);
+    cursor: pointer;
+}
+.Value{
+    margin-bottom: 10px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.2em;    
+    color:rgb(255, 255, 255);
+    background-color:#b96161;
+    border: solid brown;
+    border-radius: .4em;
+}
+.TituloM{
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #cecfb1;
+}
+.Modal{
+    position: fixed;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: white;
+    flex-direction: column;
+    border: solid gray;
+    margin: -10px -100px;
+    margin-top: -490px;
+    padding: 40%;
+}
+
+/*
+#Ni{
+    font-size: 15px;
+    color: black;
+    text-decoration: underline;
+}
+#Surname{
+    font-size: 15px;
+    color: black;
+    text-decoration: underline;
+}
+#CorreoUs{
+    font-size: 15px;
+    color: black;
+    text-decoration: underline;
+}
+*/
+#ModalN{
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+#ModalA{
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+#ModalT{
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+#ModalEm{
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+#ModalUs{
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+#TitleModalMessage{
+    border-radius: .2em;
+    background: #fadc7a;
+    padding: 3px 1em;
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+#MessageModal{
+    font-size: 17px;
+}
+#ModalMensaje{
+    display: none;
+    z-index: 2;
+}
+.modal-content{
+    border-radius: .3em;
+    box-shadow: 1px 5px 5px rgb(158, 158, 158);
+}
+.modal-content i{
+    font-size: 35px;
+    padding: .5em;
+    color: green;
+}
+#ModalScure {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con transparencia */
+    justify-content: center;
+    align-items: center;
+}
+
+#ContenidoModalSecure {
+    background-color: #fff; /* Fondo blanco del contenido del modal */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+}
+
+#ModalHead {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#Msj {
+    font-size: 1.2em;
+    color: #333;
+}
+.modal {
+    display:none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.ValorOculto{
+    display: none;
+}
+.ModalHeader {
+    background-color: #333; /* Fondo del encabezado del modal */
+    padding: 10px;
+    text-align: right;
+}
+.V{
+    text-decoration: underline;
+    font-weight: 600;
+}
+.CerrarModal {
+    color: white; /* Color del icono de cierre */
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.ModalContent {
+    padding: 20px;
+    background-color: #fff; /* Fondo del contenido del modal */
+    border-radius: 5px;
+}
+
+.BtnM{
+    height: 40px;
+    width: 40%;
+    font-size: 20px;
+    padding: .2em;
+    background: #8f8f8f;
+    margin-bottom: 10px;
+}
+.BtnM i{
+    font-size: 17px;
+    color: green;
+    padding-right: 10px;
+}
+.BtnM:hover{
+    background: #cecfb1;
+    cursor: pointer;
+}
+.ContenedorOld{
+    margin-left: 10%;
+    padding: 7px;
+}
+.ContenedorInput{
+    margin-left: 10%;
+    padding: 7px;
+}
+.BtnContainer{
+    margin-left: 20%;
+}
+.ValueOld{
+    font-size: 15px;
+    padding: 10px;
+}
+.ValueNew{
+    font-size: 15px;
+}
+/* Inicio del diseño responsivo */
+@media only screen and (max-width: 1080px){
+    #Encabezado img{
+        width: 70px;
+        height: 70px;
+        margin-left: 10px;
+        /*margin-top: -5px;
+        */padding-bottom: 0px;
+    }
+    #ContentLogo{
+        /* background: grey; */
+        width: 25%;
+    }
+    #ContentTitulo{
+        /* background: green; */
+        text-align: center;
+    }
+    
+    #Regresar{
+        background: rgb(201, 209, 255);
+        padding: .3em;
+        border-radius: .9em;
+        width: 85px;
+    }
+    #Regresar i{
+        font-size: 17px;
+    }
+    #Regresar a{
+        color: black;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    #Titulo{
+        font-family: 'Raleway', sans-serif;
+        font-size: 17px;
+        color: rgb(0, 0, 0);
+        font-weight: 600;
+    }
+    .Panel{
+        margin: 30px 20px;
+        padding: .3em;
+    }
+    .TituloAr{
+        font-size: 18px;
+    }
+    .TitleSection{
+        font-size: 18px;
+    }
+    .Dato .TitleSection{
+        text-align: end;
+    }
+    .TitleSection{
+        width: 100%;
+        text-align: end;
+    }
+    .Ico{
+        position: relative;
+        display: inline;
+        text-align: end;
+        width: 50%;
+    }
+    .TituloM{
+        font-size: 20px;
+        padding: .2em;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #cecfb1;
+        margin: 10px 10px;
+    }
+    .Modal{
+        position: fixed;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background: white;
+        flex-direction: column;
+        border: solid gray;
+        /* margin: -10px -100px; */
+        margin-top: -110px;
+        /* padding: 40%; */
+        border-radius: .3em;
+    }
+    #ModalMensaje{
+        display: none;
+    }
+    #ModalN{
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.4);
+        display: none;
+        height: 110%;
+    }
+    #ModalA{
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.4);
+        display: none;
+    }
+    #ModalT{
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.4);
+        display: none;
+    }
+    #ModalEm{
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.4);
+        display: none;
+    }
+    #ModalUs{
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.4);
+        display: none;
+    }   
+    #ModalHead {
+        font-size: 1.1em;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    #Msj {
+        font-size: 1.2em;
+        color: #333;
+    }
+    .modal {
+        display:none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .modal-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fefefe;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 300px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    }
+    
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .ValorOculto{
+        display: none;
+    }
+    .ModalHeader {
+        background-color: #333; /* Fondo del encabezado del modal */
+        padding: 10px;
+        text-align: right;
+    }
+    
+    .CerrarModal {
+        color: white; /* Color del icono de cierre */
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    .modal-content {
+        padding: 7px;
+        background-color: #fff; /* Fondo del contenido del modal */
+        border-radius: 5px;
+        margin: 0 1.5px;
+    }
+    
+    .BtnM{
+        height: 40px;
+        width: 70%;
+        font-size: 18px;
+        padding: .2em;
+        background: #8f8f8f;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: .3em;
+    }
+    .BtnM i{
+        font-size: 17px;
+        color: green;
+        padding-right: 10px;
+    }
+    .BtnM:hover{
+        background: #cecfb1;
+        cursor: pointer;
+    }
+    .ContenedorOld{
+        margin-left: 10%;
+        padding: 7px;
+    }
+    .ContenedorInput{
+        margin-left: 10%;
+        padding: 7px;
+    }
+    .BtnContainer{
+        margin-left: 20%;
+    }
+    .ValueOld{
+        font-size: 13px;
+        padding: 10px;
+    }
+    .ValueNew{
+        font-size: 13px;
+    }
+    .V{
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,582 @@
+
+.custom-modal {
+    font-size: 20px;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.custom-modalE {
+    font-size: 20px;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(255, 239, 147);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Kanit', sans-serif;
+}
+.modal-title{
+    font-size: 20px;
+    color: rgba(134, 0, 0, 0.466);
+    background: rgb(167, 167, 167);
+    padding: .5em .4em;
+    border-radius: .4em;
+    border-bottom: solid black;
+}
+.ModalHead{
+    background: rgb(214, 214, 214);
+    padding: .3em;
+    border-radius: .3em;
+}
+#CloseModalDn:hover{
+    cursor: pointer;
+}
+.modal-footer {
+    text-align: right;
+}
+.Datos{
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+.InputForm{
+    background: rgb(236, 236, 236);
+    font-size: 17px;
+    border-radius: .4em;
+    border: none;
+    padding: .2em;
+}
+.InputForm:focus{
+    outline: none;
+}
+#InputMiddle{
+    margin: 10px 0;
+}
+#BtnReady{
+    background: #56d474;
+    transition: all .3s;
+}
+#BtnReady:hover{
+    background: #93d3a2;
+    cursor: pointer;
+    transition: all.3s;
+}
+#BtnClose{
+    background: rgb(252, 139, 139);
+}
+#BtnClose:hover{
+    background: rgb(255, 178, 178);
+    cursor: pointer;
+}
+.BtnFromModal{
+    padding: 8px 15px; 
+    border-radius: .4em;
+    border:none;
+}
+#Head{
+    width: 100%;
+}
+.head{
+    text-align: center;
+    background: #f1e5da;
+}
+#Logo{
+    width: 10px;
+    height: 10px;    
+}
+#Logo img{
+    width: 90px;
+    height: 90px;
+}
+#ContentTitulo #Titulo{
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+#ContentBtn{
+    width: 100px;
+}
+#ContentBtn #Regresar{
+    vertical-align: middle;
+    height: 30px;
+    background: rgb(255, 255, 143);
+    width: 90px;
+    font-size: 15px;
+    border-radius: .6em;
+    border: none;
+}
+#Regresar a{
+    color: black;
+    text-decoration: none;
+}
+#Regresar:hover{
+    opacity: 80%;
+    cursor: pointer;
+}
+#Logotipo{
+    margin-left: 75%;
+    height: 350px;
+    width: 350px;
+}
+
+#Content {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.Art {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.Producto {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+}
+
+.Contenido {
+    padding: 10px;
+}
+#ContentAll{
+    border-radius: .4em;
+    background: linear-gradient(to bottom, rgb(199, 176, 100),rgb(224, 197, 106)) ;
+    padding: .5em;
+}
+#TitleModalProducto {
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+.Art{
+    background: linear-gradient(to bottom, rgba(245, 245, 245, 0.685),rgb(224, 224, 224));
+    border: solid rgb(141, 141, 141);
+    border-radius: .4em;
+}
+.ImgProd {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.Cant {
+    width: 50px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+#Add {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 10px;
+    transition: all .3s;
+}
+#Add a{
+    color: white;
+    text-decoration: none;
+}
+#Add:hover {
+    background-color: #33d859;
+    cursor: pointer;
+    transition: all .3s;
+}
+.FilterMsg{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.FilterQ{
+    border: solid rgba(128, 128, 128, 0.274) 1px;
+    border-radius: .4em;
+}
+#TitleF{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.breakRow{
+    display: none;
+}
+#BtnFilter{
+    margin: 0px 19px;
+    background: rgb(196, 255, 157);
+    padding: .3em;
+    border: none;
+    border-radius: .4em;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all .3s;
+}
+#BtnFilter:hover{
+    cursor: pointer;
+    transition: all .3s;
+    opacity: 70%;
+}
+#QuitFilter{
+    border-radius: .4em;
+    text-decoration: none;
+    color: black;
+    padding: .3em;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(255, 161, 161);
+}
+#BtnVerMás {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all .3s;
+}
+#BtnVerMás:hover {
+    background-color: #7bbbff;
+    color: #050505;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all .3s;
+}
+#BtnDetails {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all .3s;
+}
+#BtnDetails:hover {
+    background-color: #7bbbff;
+    color: #050505;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all .3s;
+}
+#DeleteProd{
+    transition: all .3s;
+    padding: 8px 15px; 
+    background: rgb(255, 132, 132);
+    border: none;
+    border-radius: .4em;
+    margin-top: 10px;
+    font-weight: 500;
+    color: rgb(14, 12, 0);
+}
+#DeleteProd:hover {
+    transition: all .3s;
+    background: rgb(255, 82, 82);
+    border-radius: .4em;
+    margin-top: 10px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+#ModalRemove{
+    display:none;
+}
+#Modal{
+    display: none;
+}
+.ModalBack{
+    z-index: 2;
+    position: fixed;
+    background: rgba(187, 187, 187, 0.603);
+    width: 100%;
+    height: 100%;
+}
+.ModalContent{
+    width: 400px;
+    background: white;
+    text-align: center;
+    margin: 20%;
+    margin-left: 33%;
+    padding: 1em;
+    border-radius: .3em;
+    border: solid rgb(92, 92, 92);
+}
+.MessageCorrect{
+    font-family: 'Capriola', sans-serif;
+    font-size: 20px;
+    padding: 0 .3em ;
+    background: grey;
+}
+#Correct{
+    color: green;
+    font-size: 40px;
+    margin: 10px;
+}
+#Incorrect{
+    color: rgb(255, 102, 0);
+    font-size: 40px;
+    margin: 10px;
+}
+.MessageModalBody{
+    font-size: 16px;
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+}
+#MsgNoEx{
+    background: rgb(255, 138, 138);
+    padding: .4em;
+    border-radius: .4em;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Inicio del diseño responsivo***************** */
+@media only screen and (max-width:1080px){
+    #Logo img{
+        width: 60px;
+        height: 60px;
+    }
+    #ContentTitulo #Titulo{
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+    }
+    #ContentBtn{
+        width: 10px;
+    }
+    #ContentBtn #Regresar{
+        vertical-align: middle;
+        height: 25px;
+        background: rgb(255, 255, 143);
+        width: 80px;
+        font-size: 14px;
+        border-radius: .6em;
+        border: none;
+    }
+    #Regresar a{
+        color: black;
+        text-decoration: none;
+    }
+    #Regresar:hover{
+        opacity: 80%;
+        cursor: pointer;
+    }
+    #Add {
+        background-color: #28a745;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 10px 10px;
+        transition: all .3s;
+    }
+    #Add a{
+        font-size: 13px;
+        color: white;
+        text-decoration: none;
+    }
+    .FilterMsg{
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .FilterQ{
+        border: solid rgba(128, 128, 128, 0.274) 1px;
+        border-radius: .4em;
+    }
+    .breakRow{
+        display: inline;
+    }
+    #TitleF{
+        font-size: 16px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #BtnFilter{
+        margin: 0px 19px;
+        background: rgb(196, 255, 157);
+        padding: .3em;
+        border: none;
+        border-radius: .4em;
+        font-size: 16px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        transition: all .3s;
+    }
+    #BtnFilter:hover{
+        cursor: pointer;
+        transition: all .3s;
+        opacity: 70%;
+    }
+    #QuitFilter{
+        border-radius: .4em;
+        text-decoration: none;
+        color: black;
+        padding: .3em;
+        font-size: 16px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: rgb(255, 161, 161);
+    }
+    #ContentAll{
+        border-radius: .4em;
+        background: linear-gradient(to bottom, rgb(199, 176, 100),rgb(224, 197, 106)) ;
+        padding: .3em;
+    }
+    #TitleModalProducto {
+        font-size: 16px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+    }
+    .Art{
+        background: linear-gradient(to bottom, rgba(245, 245, 245, 0.685),rgb(224, 224, 224));
+        border: solid rgb(141, 141, 141);
+        border-radius: .4em;
+    }
+    .Producto {
+        display: inline-block;
+        width: 100%;
+        text-align: left;
+    }
+    .Datos{
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 10px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .Contenido {
+        padding: 1px;
+    }
+    .ImgProd {
+        height: 150px;
+        width: 290px;
+        margin-top: 10px;
+    }
+    .custom-modal {
+        font-size: 16px;
+        display: none;
+        position: fixed;
+        width: 95%;
+        height: 140px;
+        margin-top: 200px;
+        z-index: 1;
+        margin-left: 10px;
+        padding: .2em;
+    }
+    .custom-modalE {
+        font-size: 20px;
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 90px;
+    }
+    .modal-title{
+        font-size: 16px;
+        color: rgba(134, 0, 0, 0.466);
+        background: rgb(167, 167, 167);
+        padding: .2em .4em;
+        border-radius: .4em;
+        border-bottom: solid black;
+    }
+    .InputForm{
+        background: rgb(236, 236, 236);
+        font-size: 14px;
+        border-radius: .4em;
+        border: none;
+        padding: .2em;
+    }
+    #ModalContent{
+        width: 100%;
+        background: white;
+        text-align: center;
+        margin-left: 13%;
+        padding: 1em;
+        border-radius: .3em;
+        border: solid rgb(92, 92, 92);
+    }
+    .modal-content {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        background: rgb(255, 239, 147);
+        padding: 1px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        font-family: 'Kanit', sans-serif;
+    }
+    .modal-overlay {
+        position: absolute;
+        margin-top: -200px;
+        width: 100%;
+        height: 700%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    #ModalRemove{
+        display:none;
+    }
+    #Modal{
+        display: none;
+    }
+    .ModalBack{
+        z-index: 2;
+        position: fixed;
+        background: rgba(187, 187, 187, 0.603);
+        width: 100%;
+        height: 100%;
+    }
+    .ModalContent{
+        width: 80%;
+        background: white;
+        text-align: center;
+        margin: 10%;
+        margin-left: 4%;
+        padding: .6em;
+        border-radius: .3em;
+        border: solid rgb(92, 92, 92);
+    }
+    .MessageCorrect{
+        font-family: 'Capriola', sans-serif;
+        font-size: 20px;
+        padding: 0 .3em ;
+        background: grey;
+    }
+    #Correct{
+        color: green;
+        font-size: 40px;
+        margin: 10px;
+    }
+    #Incorrect{
+        color: rgb(255, 102, 0);
+        font-size: 40px;
+        margin: 10px;
+    }
+    .MessageModalBody{
+        font-size: 16px;
+        font-weight: 800;
+        font-family: 'Open Sans', sans-serif;
+    }
+}

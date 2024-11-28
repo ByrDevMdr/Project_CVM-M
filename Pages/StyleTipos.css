@@ -1,0 +1,356 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #f3f3f3;
+    /* background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 .99C4 .445 4.444 0 5 0c.552 0 1 .45 1 .99v4.02C6 5.555 5.556 6 5 6c-.552 0-1-.45-1-.99V.99zm6 8c0-.546.444-.99 1-.99.552 0 1 .45 1 .99v4.02c0 .546-.444.99-1 .99-.552 0-1-.45-1-.99V8.99z' fill='%230f091a' fill-opacity='0.2' fill-rule='evenodd'/%3E%3C/svg%3E"); */
+}
+#Titulo{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 100px;
+}
+#Titulo  #Title{
+    display: flex;
+    align-items: center;
+    height: 7vh;
+    justify-content: center;
+}
+#Title{
+    padding: .4em;
+    /* border: solid rgb(223, 201, 78); */
+    /* background: linear-gradient(to right,rgb(180, 154, 70), rgb(255, 255, 255)); */
+    background: rgb(255, 235, 119);
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+.Tarjeta{
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-radius: .9em;
+    width: 68%;
+    background: rgb(255, 245, 186);
+    margin-bottom: 90px;
+}
+.Tarjeta2{
+    border-top: 2px solid rgb(30, 35, 85);
+    border-right: 2px solid rgb(10, 12, 104);
+    border-radius: .9em;
+    width: 68%;
+    background: rgb(255, 254, 253);
+    margin-bottom: 90px;
+}
+.Tarjeta2 .Contenido{
+    display: inline-block;
+    vertical-align: 350%;
+}
+.Tarjeta .Contenido{
+    display: inline-block;
+    vertical-align: 350%;
+}
+.Tarjeta2 .Contenido p{
+    margin-bottom: 20px;
+}
+.Tarjeta2 .Contenido a{
+    background: rgba(238, 214, 0, 0.644);
+    /* border: 2.3px solid black; */
+    color: rgb(65, 50, 19);
+    padding: .2em;
+    border-top: none;
+    border-left: none;
+    border-radius:.3em ;
+    text-decoration: none;
+    transition: all 200ms ease;
+    vertical-align: -20px;
+}
+.Tarjeta2 .Contenido #NameCategoria{
+    margin: 10px;
+    text-decoration: underline;
+    color: rgb(70, 45, 104)
+}
+.Tarjeta2 .Contenido a:hover{
+    zoom: 99%;
+    transition: all 200ms ease;
+    background: rgb(196, 196, 150);
+    color: rgb(20, 20, 20);
+}
+.Contenido{
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 23px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.Tarjeta .Contenido p{
+    margin-bottom: 20px;
+}
+.Tarjeta .Contenido a{
+    background: rgba(180, 166, 34, 0.644);
+    /* border: 2.3px solid black; */
+    color: rgba(0, 0, 0, 0.726);
+    padding: .2em;
+    border-top: none;
+    border-left: none;
+    border-radius:.3em ;
+    text-decoration: none;
+    transition: all 200ms ease;
+    vertical-align: -20px;
+}
+.Tarjeta .Contenido a:hover{
+    zoom: 99%;
+    transition: all 200ms ease;
+    background: rgb(196, 196, 150);
+    color: rgb(20, 20, 20);
+}
+.Tarjeta .Contenido #NameCategoria{
+    margin: 10px;
+    text-decoration: underline;
+    color: rgb(86, 105, 207)
+}
+img{
+    border-radius: .9em;
+    border: solid rgba(0, 0, 0, 0.568);
+    width: 20cap;
+    height: 20cap;
+    padding: .2em;
+    margin-right: 9px;
+}
+button{
+    background: rgb(211, 211, 255);
+    font-size: 24px;
+    height: 60px;
+    width: 200px;
+    margin-left: 100px;
+   margin-bottom: 40px;
+   transition: all .4s;
+   border: none;
+   border-radius: .6em;
+}
+button i{
+    font-size: 27px;
+}
+button a{
+    padding-right: 20px;
+    padding-left: 30px;
+}
+button:hover{
+    cursor: pointer;
+   transition: all .4s  ;
+    background: rgb(214, 209, 209);
+}
+button a{
+    text-decoration: none;
+    color: black;
+    font-family: 'poppins', sans-serif, cursive;
+    font-weight: 600;
+}
+.footer{
+    font-weight: bold;
+    height: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top:40px ;
+    text-align: end;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+a#Correo{
+    color: black;
+    text-decoration: none;
+    margin-right: 50px;
+}
+a#Correo:hover{
+    text-decoration:underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+    text-decoration-skip-ink: skip-spaces;
+    transition-duration:100s ;
+}
+a#Num{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+a#Num:hover{
+    text-decoration:underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+    text-decoration-skip-ink: skip-spaces;
+    transition-duration:100s ;
+}
+footer#Down{
+    height: 30px;
+    text-align: end;
+    background-color: #DFDBE5;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.37' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+}
+/*Inicio de diseño responsibo*****/
+@media (max-width:1200px) {
+    body{
+        background: #f3f3f3;
+    }
+    #Titulo{
+        width: 100%;
+        height: 50px;
+        margin-bottom: 50px;
+    }
+    #Title{
+        font-size: 18px;
+    }
+    .Tarjeta{
+        border-top: 2px solid rgba(0, 0, 0, 0.555);
+        border-right: 2px solid rgba(0, 0, 0, 0.555);
+        border-radius: .9em;
+        width: 75%;
+        background: rgb(255, 245, 186);
+        margin-bottom: 90px;
+        text-align: center;
+    }
+    .Tarjeta2{
+        border-top: 2px solid rgb(30, 35, 85);
+        border-right: 2px solid rgb(10, 12, 104);
+        border-radius: .9em;
+        width: 68%;
+        background: rgb(211, 211, 211);
+        margin-bottom: 90px;
+        text-align: center;
+    }
+    /* .Tarjeta{
+
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        border-radius: .9em;
+        width: 68%;
+        background: rgb(138, 154, 204);
+        margin-bottom: 90px;
+    } */
+    .Tarjeta2{
+        border-top: 2px solid rgb(30, 35, 85);
+        border-right: 2px solid rgb(10, 12, 104);
+        border-radius: .9em;
+        width: 75%;
+        background: rgb(214, 214, 214);
+        margin-bottom: 90px;
+    }
+    .Tarjeta2 .Contenido{
+        display: inline-block;
+        vertical-align: 350%;
+    }
+    .Tarjeta .Contenido{
+        display: inline-block;
+        vertical-align: 350%;
+    }
+    .Tarjeta2 .Contenido p{
+        margin-bottom: 20px;
+    }
+    .Tarjeta2 .Contenido a{
+        background: rgba(238, 194, 0, 0.644);
+        /* border: 2.3px solid black; */
+        color: rgb(65, 50, 19);
+        padding: .2em;
+        border-top: none;
+        border-left: none;
+        border-radius:.3em ;
+        text-decoration: none;
+        transition: all 200ms ease;
+        vertical-align: -20px;
+    }
+    .Tarjeta2 .Contenido #NameCategoria{
+        margin: 10px;
+        text-decoration: underline;
+        color: rgb(70, 45, 104)
+    }
+    .Tarjeta2 .Contenido a:hover{
+        zoom: 99%;
+        transition: all 200ms ease;
+        background: rgb(196, 196, 150);
+        color: rgb(20, 20, 20);
+    }
+    .Contenido{
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 23px;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    .Tarjeta .Contenido p{
+        margin-bottom: 20px;
+    }
+    .Tarjeta .Contenido a{
+        background: rgba(178, 180, 34, 0.644);
+        /* border: 2.3px solid black; */
+        color: rgba(0, 0, 0, 0.726);
+        padding: .2em;
+        border-top: none;
+        border-left: none;
+        border-radius:.3em ;
+        text-decoration: none;
+        transition: all 200ms ease;
+        vertical-align: -20px;
+    }
+    .Tarjeta .Contenido a:hover{
+        zoom: 99%;
+        transition: all 200ms ease;
+        background: rgb(196, 196, 150);
+        color: rgb(20, 20, 20);
+    }
+    .Tarjeta .Contenido #NameCategoria{
+        margin: 10px;
+        text-decoration: underline;
+        color: rgb(86, 105, 207)
+    }
+    .Contenido{
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 16px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 550;
+    }
+    img{
+        border-radius: .9em;
+        /* border: solid rgba(0, 0, 0, 0.568); */
+        width: 130px;
+        height:130px;
+        padding: .2em;
+    }
+    button{
+        border: none;
+        background: rgb(180, 180, 250);
+        font-size: 15px;
+        height: 30px;
+        width: 120px;
+        margin-left: 10px;
+       margin-bottom: 20px;
+       transition: all 400ms ease;
+       padding: .3em;
+       border-radius: .3em;
+    }
+    button i{
+        font-size: 15px;
+    }
+    button a{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    button:hover{
+       transition: all 100ms ease;
+        background: rgb(214, 209, 209);
+    }
+    button a{
+        text-decoration: none;
+        color: black;
+        font-family: 'poppins', sans-serif, cursive;
+        font-weight: 600;
+    }
+    .footer{
+        font-weight: 500;
+        height: 40px;
+        font-family: 'Josefin Sans', sans-serif;
+        margin-top:40px ;
+        text-align: start;
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+/* Estilos para el encabezado */
+#Encabezado{
+    width: 100%;
+    background: rgb(255, 255, 135);
+}
+#ContentBtnRegresar{
+    width: 25%;
+    text-align: center;
+}
+#IconRegresar{
+    font-size: 30px;
+    color: rgb(0, 68, 255);
+}
+#IconRegresar:hover{
+    opacity: 70%;
+    cursor: pointer;
+    padding: .6em;
+}
+#ContentTitle{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 27px;
+    width: 50%;
+    text-align: center;
+    font-weight: 700;
+}
+#ContentLogo img{
+    border-radius: .4em;
+    height: 100px;
+    width: 100px;
+}
+/* Estilos del contenedor de los detalles de la compra */
+#PanelMain{
+    display:flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+#Detalles{
+    list-style: inside;
+    text-align: center;
+    background: rgb(255, 235, 235);
+    width: 50%;
+    font-size: 20px;
+    padding: 30px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    border: 1px solid rgba(0, 0, 0, 0.288);
+    box-shadow: 3px 2px 8px rgb(0, 0, 0);
+    border-radius: .3em;
+    margin: 10px 10px;
+}
+#Details{
+    color:black;
+    font-size: 23px;
+}
+.BtnLess{
+    font-size: 20px;
+    width: 25px;
+    border: none;
+    border-radius: .4em;
+    background: rgb(255, 214, 137);
+    transition: all .4s;
+}
+.BtnLess:hover{
+    cursor: pointer;
+    transition: all .4s;
+    background: rgb(255, 203, 105);
+}
+.BtnMore{
+    font-size: 20px;
+    width: 25px;
+    border: none;
+    border-radius: .4em;
+    background: rgb(180, 255, 220);
+    transition:  all .4s;
+}
+.BtnMore:hover{
+    cursor: pointer;
+    transition: all  .4s;
+    background: rgb(133, 255, 198);
+}
+.BtnRemove{
+    padding: .2em .4em;
+    border: none;
+    border-radius: .3em ;
+    font-size: 17px;
+    margin: 0 10px;
+    background: rgb(255, 174, 174);
+    transition: all .4s;
+}
+.BtnRemove:hover{
+    transition: all .4s;
+    cursor: pointer;
+    background: rgb(255, 211, 211);
+}
+.BodyModalCart{
+    background-color: rgb(118, 169, 211);
+    padding: .3em;
+    border-radius: .4em;
+    margin: 10px 10px;
+}
+#ClearCart{
+    margin: 10px;
+    background: goldenrod;
+    padding: .3em;
+    font-size: 16px;
+    border: none;
+    border-radius: .4em;
+    color: rgb(255, 255, 255);
+    transition: all .4s;
+}
+#ClearCart:hover{
+    transition: all .4s;
+    cursor: pointer;
+    opacity: 80%;
+}
+#ClearCart i{
+    padding: .3em;
+    font-size: 18px;
+    color: rgb(138, 49, 49);
+}
+/* Estilos del contenedor del método de pago */
+#Método{
+    margin: 10px 10px;
+    text-align: center;
+    background: rgb(215, 214, 255);
+    width: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.288);
+    box-shadow: -2px 2px 8px rgb(0, 0, 0);
+    border-radius: .3em;
+    margin: 10px 10px;
+    font-size: 20px;
+    padding: 30px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+#BtnPay{
+    color: rgb(0, 0, 0);
+    background: rgb(138, 255, 138);
+    border: none;
+    padding: .4em;
+    border-radius: .3em;
+    font-size: 17px;
+    margin: 40px 0;
+    transition: all .4s;
+}
+#BtnPay:hover{
+    transition: all .4s;
+    cursor: pointer;
+    opacity: 80%;
+}
+#ContNota{
+    letter-spacing: 2px;
+    padding: .3em;
+    margin: 40px 20px;
+    background: rgba(238, 255, 0, 0.582);
+    font-size: 18px;
+    justify-content: center;
+    border-radius: .6em;
+}
+@media only screen and (max-width:1080px){
+    /* Diseño responsivo para el encabezado */
+    #ContentBtnRegresar{
+        width: 25%;
+        text-align: center;
+    }
+    #IconRegresar{
+        font-size: 25px;
+        color: rgb(0, 68, 255);
+    }
+    #IconRegresar:hover{
+        opacity: 70%;
+        cursor: pointer;
+        padding: .6em;
+    }
+    #ContentTitle{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 17px;
+        width: 50%;
+        text-align: center;
+        font-weight: 700;
+    }
+    #ContentLogo img{
+        border-radius: .4em;
+        height: 60px;
+        width: 60px;
+    }
+    /* Estilos responsivos para el panel principal */
+    #PanelMain{
+        display:flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    #Detalles{
+        list-style: inside;
+        text-align: center;
+        background: rgb(255, 235, 235);
+        width: 94%;
+        padding: 30px 0;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        border: 1px solid rgba(0, 0, 0, 0.26);
+        box-shadow: none;
+        border-radius: .3em;
+        margin: 10px 10px;
+    }
+    #Details{
+        font-size: 20px;
+    }
+    .BodyModalCart{
+        background-color: rgb(118, 169, 211);
+        padding: .1em;
+        border-radius: .4em;
+        margin: 10px 5px;
+        height: 60px;
+        font-size: 15px;
+        list-style: none;
+    }
+    .BtnLess{
+        font-size: 19px;
+        width: 15px;
+        border: none;
+        border-radius: .2em;
+        background: rgb(255, 214, 137);
+        transition: all .4s;
+    }
+    .BtnMore{
+        font-size: 19px;
+        width: 15px;
+        border: none;
+        border-radius: .2em;
+        background: rgb(180, 255, 220);
+        transition:  all .4s;
+    }
+    .BtnRemove{
+        padding: .2em .4em;
+        border: none;
+        border-radius: .3em ;
+        font-size: 15px;
+        margin: 5px 20px;
+        background: rgb(255, 174, 174);
+        transition: all .4s;
+    }
+     /* Estilos responsivos del segundo panel */
+     #Método{
+        text-align: center;
+        background: rgb(215, 214, 255);
+        width: 94%;
+        border: 1px solid rgba(0, 0, 0, 0.26);
+        box-shadow: none;
+        border-radius: .3em;
+        margin: 10px 10px;
+        font-size: 15px;
+        padding: 30px 0;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+    }
+    #BtnPay{
+        color: rgb(0, 0, 0);
+        background: rgb(138, 255, 138);
+        border: none;
+        padding: .4em;
+        border-radius: .3em;
+        font-size: 17px;
+        margin-top: 20px;
+        transition: all .4s;
+    }
+    #ContNota{
+        letter-spacing: 1px;
+        padding: .4em;
+        margin: 40px 20px;
+        background: rgba(238, 255, 0, 0.582);
+        font-size: 15px;
+        justify-content: center;
+        border-radius: .6em;
+    }
+    #Nota{
+        padding: .5em;
+    }
+}

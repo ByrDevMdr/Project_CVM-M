@@ -1,0 +1,635 @@
+*{
+    margin: 0px;
+    padding: 0px;
+  }
+  body{
+    background: #ffffff;
+  }
+  #Encabezado{
+    background: #dfd7cf;
+    top: 0px;
+    border-radius: 9em;
+    width: 100%;
+  }
+  #Encabezado img{
+    width: 90px;
+    height: 70px;
+    margin-left: 60px;
+    /*margin-top: -5px;
+    */padding-bottom: 0px;
+  
+  }
+  #Encabezado h3{
+    top: 0px;
+    font-size: 30px;
+    margin: 10px;
+    padding: 12px 111px;
+    color: rgb(12, 12, 12);
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    letter-spacing: 2px; /*Espaciado entre letras*/
+  }
+  #Encabezado #Regresar{
+    border-radius: 10px;
+    border: none;
+    padding: 2px;
+    background: #4d749b;
+    font-size: 19px;
+    width: 100px;
+    /*position: relative;*/
+    left: 1000px;
+    bottom: 20px;
+    margin-left: 100px;
+    margin-bottom: 0px;
+  }
+  #Encabezado #Regresar a{
+    color: #d0ddf5;
+    padding: 8px;
+    text-decoration: none;
+  }
+  #Encabezado #Regresar:hover{
+    cursor: pointer;
+    color: rgb(201, 201, 201);
+    background: #567abe;
+  }
+  #ContentP{
+    letter-spacing: 1px; /*Espaciado entre letras*/
+    border-radius: .4em;
+    text-align: center;
+    background: rgb(243, 193, 86);
+    margin: 20px 260px;
+    width: 60%;
+    /* height: 350px; */
+    padding: .9em;
+  }
+  #Title{
+    font-size: 30px;
+    color: rgb(83, 82, 80);
+    vertical-align: sub;
+  }
+  #ContMsg{
+    background: rgb(243, 193, 30);
+    margin: 10px 10px;
+    padding: .7em;
+  }
+  #MsgNote{
+    background: rgb(255, 229, 176);
+    padding: .8em;
+  }
+  #Msg{
+    font-size: 1.4em;
+    font-family: "Roboto", sans-serif;
+  }
+  #ModalError{
+    background: rgb(241, 241, 241);
+    position: fixed;
+    /* display: block; */
+    border: none;
+    inset: 0;
+    margin: auto;
+    padding: .9em;
+    z-index: 1;
+    text-align: center;
+    border-radius: .3em;
+    box-shadow: 1px 1px 3px black, -1px -1px 3px gray;}
+  #ModalError p{
+    font-size: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+  
+  }
+  #ModalError i{
+    text-align: end;
+    font-size: 27px;
+    inset: 0;
+    margin: 10px 100px;
+    color: green;
+  }
+  #ModalError #closeBtn{
+    cursor: pointer;
+    font-size: 25px;
+  }
+  #ModalError::backdrop{
+    background: rgba(61, 61, 61, 0.336);
+  }
+  #ModalError #State{
+    font-size: 17px;
+    font-family: 'Kanit', sans-serif;
+  font-weight: 580;
+  }
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: .7em;
+    width: 80%;
+  }
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .closeM {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .closeM:hover,
+  .closeM:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .closeN {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .closeN:hover,
+  .closeN:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .closeD {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .closeD:hover,
+  .closeD:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .closeP {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .closeP:hover,
+  .closeP:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #nameForm {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  #nameForm label {
+    margin-bottom: 8px;
+  }
+  #nameForm input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    padding: 8px;
+    margin-bottom: 12px;
+  }
+  #nameForm button {
+    background-color: #afa04c;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .Steps {
+    position: relative;
+    background-color: aliceblue;
+    margin: 10px 20px;
+    border-radius: .7em;
+    padding: 10px;
+    text-align: start;
+    font-size: 15px;
+  }
+  
+  .Steps i {
+    margin: 10px 40px 0px;
+    font-size: 30px;
+    padding: 0px 0px;
+  }
+  
+  .Steps p {
+    font-family: 'Kanit', sans-serif;
+    color: rgb(100, 100, 100);
+    margin: 0px 160px;
+  }
+  
+  .Steps .StepD {
+    font-family: 'Kanit', sans-serif;
+    font-size: 25px;
+    margin: 0px 100px 0px 0px;
+  }
+  .Quit:hover{
+    cursor: pointer;
+    opacity: 80%;
+    transition: all .3s;
+  }
+  .Quit{
+    transition: all .3s;
+    right: 0;
+    background: rgb(151, 90, 90);
+    color: rgb(173, 171, 49);
+    font-size: 14px;
+    border: none;
+    font-weight: 600;
+    border-radius: .3em;
+    width: 100px;
+    position: absolute;
+    margin: 30px 20px 0px 100px;
+    /* background: #9aa8c2; */
+    /* top: 30px; */
+    /* right: 0; Alineación en la parte inferior */
+  }
+  .Quit:hover{
+    cursor: pointer;
+    opacity: 80%;
+    transition: all .3s;
+  }
+  .Quit{
+    transition: all .3s;
+    right: 0;
+    background: rgb(151, 90, 90);
+    color: rgb(173, 171, 49);
+    font-size: 14px;
+    border: none;
+    font-weight: 600;
+    border-radius: .3em;
+    width: 100px;
+    position: absolute;
+    margin: 30px 20px 0px 100px;
+    /* background: #9aa8c2; */
+    /* top: 30px; */
+    /* right: 0; Alineación en la parte inferior */
+  }
+  .Steps .Add {
+    font-size: 14px;
+    border: none;
+    font-weight: 600;
+    border-radius: .3em;
+    color: rgb(36, 37, 37);
+    width: 100px;
+    background: #9aa8c2;
+    /* top: 30px; */
+    right: 0; /* Alineación en la parte inferior */
+    position: absolute;
+    padding: .3em;
+    margin: 30px 20px 0px 100px;
+  }
+  
+  .Steps .Add:hover {
+    cursor: pointer;
+    background: #7087b3;
+    color: rgb(199, 199, 199);
+  }
+   #QuitN{
+  right: 0;
+  background: rgb(151, 90, 90);
+  color: rgb(173, 171, 49);
+  }
+  #QuitE{
+  /* left:10cm; */
+  background: rgb(151, 90, 90);
+  color: rgb(173, 171, 49);
+  }
+  #QD{
+  /* left:10cm; */
+  background: rgb(151, 90, 90);
+  color: rgb(173, 171, 49);
+  }
+  #QuitTel{
+  /* left:13cm; */
+  background: rgb(151, 90, 90);
+  color: rgb(173, 171, 49);
+  }
+  #QP{
+  /* left:13cm; */
+  background: rgb(151, 90, 90);
+  color: rgb(173, 171, 49);
+  } 
+  #ErrorP{
+  color: rgb(68, 68, 68);
+  }
+  .fa-circle-exclamation{
+    top:-25px;
+  }
+  #ContentButtonReady{
+    text-align: center;
+    /* background: red; */
+  }
+  #BtnReady{
+    background: rgb(80, 77, 255);
+    padding: .8em;
+    border: none;
+    border-radius: .5em;
+    font-size: 16px;
+    color: rgb(204, 204, 204);
+    /* margin-left:10px;  */
+    font-family: 'Open Sans', sans-serif; 
+    font-weight:600;
+    transition: all .3s;
+  }
+  #BtnReady:hover{
+    transition: all .3s;
+    background: rgb(116, 21, 21);
+    cursor: pointer;
+  }
+  #BtnReady i{
+    color: rgb(255, 217, 0); 
+    font-weight:900;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  /* Diseño responsivo */
+  @media only screen and (max-width:1080px){
+    #Encabezado{
+        background: #e4c9ad;
+        /* background: red; */
+        width: -110px;
+    }
+  /*     #ContLogo{
+        /* background: red;
+    }
+    #ContTitle{
+        /* background: green;
+    } */
+    #ContBtn{
+        /* background: #000000; */
+        padding: 1px;
+    }
+    #Msg{
+        justify-content: center;
+        font-size: .9em;
+        font-family: "Roboto", sans-serif;
+      }
+    #Encabezado img{
+        width: 50px;
+        height: 50px;
+        margin-left: 10px;
+        /*margin-top: -5px;
+        */padding-bottom: 0px;
+    }
+    #Encabezado h3{
+        top: 0px;
+        font-size: 23px;
+        margin: 10px;
+        padding: 12px 11px;
+        color: rgb(12, 12, 12);
+        text-align: center;
+        font-family: 'Inconsolata', monospace;
+        letter-spacing: 2px; /*Espaciado entre letras*/
+    }
+    #Encabezado #Regresar{
+        border-radius: 10px;
+        border: none;
+        padding: 1px;
+        background: #4d749b;
+        font-size: 14px;
+        width: 70px;
+        /*position: relative;*/
+        /* left: 10px; */
+        bottom: 20px;
+        margin-left: 1px;
+        margin-bottom: 0px;
+    }
+    #Encabezado #Regresar a{
+        color: #d0ddf5;
+        padding: 5px;
+        text-decoration: none;
+    }
+    #Encabezado #Regresar:hover{
+        cursor: pointer;
+        color: rgb(201, 201, 201);
+        background: #567abe;
+    }
+    #ContentP{
+        letter-spacing: 1px; /*Espaciado entre letras*/
+        border-radius: .4em;
+        text-align: center;
+        background: rgb(243, 193, 86);
+        margin: 20px 20px;
+        width: 80%;
+        /* height: 350px; */
+    }
+    #Title{
+        font-size: 20px;
+        color: rgb(83, 82, 80);
+        vertical-align: sub;
+    }
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+      .modal-content {
+        background-color: #fefefe;
+        /* margin: 10% auto; */
+        padding: 10px;
+        border: 2px solid rgb(70, 96, 180);
+        border-bottom: 3px solid rgb(70, 96, 180);
+        border-right: 3px solid rgb(70, 96, 180);
+        border-radius: .7em;
+        width: 70%;
+      }
+      .close {
+        color: #000000;
+        float: right;
+        font-size: 30px;
+        padding: 4px;
+        background: rgb(201, 201, 201);
+        border-radius: 100%;
+        font-weight: bold;
+      }
+      .close:hover,
+      .close:focus {
+        /* color: #000; */
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .closeM {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      .closeM:hover,
+      .closeM:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .closeN {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      .closeN:hover,
+      .closeN:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .closeP {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      .closeP:hover,
+      .closeP:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      #nameForm {
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+      }
+      #nameForm label {
+        margin-bottom: 8px;
+      }
+      #nameForm input {
+        font-size: 14px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        outline: none;
+        padding: 8px;
+        margin-bottom: 12px;
+      }
+      #nameForm button {
+        background-color: #4c6faf;
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+    .Steps{
+        position: relative;
+        background-color: aliceblue;
+        margin: 10px 20px;
+        border-radius: .7em;
+        padding: 10px;
+        text-align: start;
+        font-size: 15px;
+        display: flex;
+        flex-direction: row;
+        height: 70px;
+        overflow: auto;
+    }
+    .Steps i{
+        margin: 10px 40px 0px;
+        font-size: 19px;
+        padding: 0px 0px;
+    }
+    .Steps p{
+        font-family: 'Kanit', sans-serif;
+        color: rgb(100, 100, 100);
+        margin: 0px -110px;
+        display: none;
+    }
+    .Steps .StepD{
+        font-family: 'Kanit', sans-serif;
+        font-size: 15px;
+        margin: 0px 10px 0px 0px;
+    }
+    .Steps .Add{
+        font-size: 14px;
+        border: none;
+        font-weight: 600;
+        border-radius: .3em;
+        color: rgb(36, 37, 37);
+        width: 70px;
+        background: #9aa8c2;
+        top: 30px;
+        /* align-items: start; */
+        position: absolute;
+        padding: .3em;
+        margin: 30px 100px 0 0;
+    }
+    .Steps .Add:hover{
+        cursor: pointer;
+        background: #7087b3;
+        color: rgb(199, 199, 199);
+    }
+    #Name{
+        height: 100px;
+    }
+    #QuitN{
+        /* padding: .9em; */
+        font-size: 11px;
+        height: 32px;
+     /* margin-left: 50px; */
+     margin-right: 170px;
+     background: rgb(151, 90, 90);
+     color: rgb(173, 171, 49);
+     margin-top: 70px;
+    }
+    #QuitE{        
+       margin-top: 40px;
+        font-size: 11px;
+        height: 32px;
+        margin-right: 170px;
+        background: rgb(151, 90, 90);
+      color: rgb(173, 171, 49);
+    }
+    #QuitTel{
+        /* width: 100px; */
+        margin-top: 40px;
+        font-size: 11px;
+        height: 32px;
+        margin-right: 170px;
+      background: rgb(151, 90, 90);
+      color: rgb(173, 171, 49);
+    }
+    #QP{
+        font-size: 11px;
+        height: 32px;
+        margin-right: 170px;
+        background: rgb(151, 90, 90);
+      color: rgb(173, 171, 49);
+    }
+    #ErrorP{
+      color: rgb(68, 68, 68);
+    }
+    .fa-circle-exclamation{
+        margin-right:-90px;
+      }
+  }

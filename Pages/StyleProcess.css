@@ -1,0 +1,190 @@
+#Encabezado{
+    width: 100%;
+    background: rgb(255, 255, 135);
+}
+#ContentBtnRegresar{
+    width: 25%;
+    text-align: center;
+}
+#IconRegresar{
+    font-size: 30px;
+    color: rgb(0, 68, 255);
+}
+#IconRegresar:hover{
+    opacity: 70%;
+    cursor: pointer;
+    padding: .6em;
+}
+#ContentTitle{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 27px;
+    width: 50%;
+    text-align: center;
+    font-weight: 700;
+}
+#ContentLogo img{
+    border-radius: .4em;
+    height: 100px;
+    width: 100px;
+}
+#PayPal-button-container{
+    position: sticky;
+    z-index: 1;
+}
+/* Fin de los estilos del encabezado  */
+/* Estilos del modal */
+#Modal{
+    display: none;
+}
+.ModalBack{
+    z-index: 2;
+    position: fixed;
+    background: rgba(187, 187, 187, 0.603);
+    width: 100%;
+    height: 100%;
+}
+.ModalContent{
+    width: 400px;
+    background: white;
+    text-align: center;
+    margin: 15%;
+    margin-left: 33%;
+    padding: 1em;
+    border-radius: .3em;
+    border: solid rgb(92, 92, 92);
+}
+.MessageCorrect{
+    font-family: 'Capriola', sans-serif;
+    font-size: 20px;
+    padding: 0 .3em ;
+    background: grey;
+}
+#Correct{
+    color: green;
+    font-size: 40px;
+    margin: 10px;
+}
+
+.MessageModalBody{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+  
+/* Estilos para el contenido principal */
+#Container{
+    text-align: center;
+}
+#ContainerMessageAbono{
+    border-radius: .4em;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    background: rgb(107, 129, 255);
+    font-size: 23px;
+    color: white;
+    padding: 10px;
+}
+#ContNote{
+    padding: .9em;
+    margin-top: 10px;
+}
+#Note{
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    border-radius: .4em;
+    padding: .9em;
+    background: rgba(163, 80, 80, 0.575);
+    font-size: 19px;
+}
+@media only screen and (max-width:1080px){
+        /* Diseño responsivo para el encabezado */
+        #ContentBtnRegresar{
+            width: 25%;
+            text-align: center;
+        }
+        #IconRegresar{
+            font-size: 25px;
+            color: rgb(0, 68, 255);
+        }
+        #IconRegresar:hover{
+            opacity: 70%;
+            cursor: pointer;
+            padding: .6em;
+        }
+        #ContentTitle{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 17px;
+            width: 50%;
+            text-align: center;
+            font-weight: 100;
+        }
+        #ContentLogo img{
+            border-radius: .4em;
+            height: 60px;
+            width: 60px;
+        }
+        /* Estilos para el cuerpo principal */
+        #ContainerMessageAbono{
+            border-radius: .4em;
+            font-family: 'Roboto', sans-serif;
+            margin: 10px;
+            background: rgb(107, 129, 255);
+            font-size: 15px;
+            color: white;
+            padding: 10px;
+        }
+        /* Diseño responsivo para el modal */
+        #Modal{
+            display: none;
+        }
+        .ModalBack{
+            z-index: 2;
+            position: fixed;
+            background: rgba(187, 187, 187, 0.603);
+            width: 100%;
+            height: 100%;
+        }
+        .ModalContent{
+            width: 80%;
+            background: white;
+            text-align: center;
+            margin: 15%;
+            margin-left: 4%;
+            padding: .6em;
+            border-radius: .3em;
+            border: solid rgb(92, 92, 92);
+        }
+        .MessageCorrect{
+            font-family: 'Capriola', sans-serif;
+            font-size: 20px;
+            padding: 0 .3em ;
+            background: grey;
+        }
+        #Correct{
+            color: green;
+            font-size: 40px;
+            margin: 10px;
+        }
+        #Incorrect{
+            color: rgb(255, 102, 0);
+            font-size: 40px;
+            margin: 10px;
+        }
+        .MessageModalBody{
+            font-size: 16px;
+            font-weight: 800;
+            font-family: 'Open Sans', sans-serif;
+        }
+        #ContNote{
+            padding: .9em;
+            margin-top: 10px;
+        }
+        #Note{
+            /* font-weight: 500; */
+            font-family: 'Roboto', sans-serif;
+            border-radius: .4em;
+            padding: 1em;
+            background: rgba(165, 106, 106, 0.089);
+            font-size: 10px;
+        }
+} 

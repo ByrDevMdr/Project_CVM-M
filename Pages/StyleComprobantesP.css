@@ -1,0 +1,59 @@
+.head{
+    text-align: center;
+    background: #dfd7cf;
+    margin-bottom: 30px;
+    width: 100%;
+}
+#Logo{
+    width: 10px;
+    height: 10px;    
+}
+#Logo img{
+    width: 90px;
+    height: 90px;
+}
+#Titulo{
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+#ContentBtn{
+    width: 100px;
+}
+#ContentBtn #Regresar{
+    vertical-align: middle;
+    height: 30px;
+    background: rgb(255, 255, 0);
+    width: 90px;
+    font-size: 15px;
+    border-radius: .6em;
+    border: none;
+}
+#Regresar a{
+    color: black;
+    text-decoration: none;
+}
+#Regresar:hover{
+    opacity: 80%;
+    cursor: pointer;
+}
+#Logotipo{
+    margin-left: 75%;
+    height: 350px;
+    width: 350px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.file-list {
+    list-style-type: none;
+    padding: 0;
+}
+.file-list li {
+    margin: 10px 0;
+}
+.file-list img {
+    max-width: 100px;
+    display: block;
+    margin-bottom: 5px;
+}

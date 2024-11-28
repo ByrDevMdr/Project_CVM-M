@@ -1,0 +1,41 @@
+#Encabezado{
+    background: -webkit-linear-gradient(to right, #fffb00, #272910); 
+    background: linear-gradient(to right, #fdffa1, #f1d761); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    top: 0px;
+}
+#Encabezado img{
+    width: 80px;
+    height: 70px;
+    margin-left: 60px;
+    /*margin-top: -5px;
+    */padding-bottom: 0px;
+}
+#Regresar{
+    background: rgb(201, 209, 255);
+    padding: .3em;
+    border-radius: .9em;
+    border: none;
+    width: 120px;
+}
+#Regresar i{
+    font-size: 20px;
+}
+#Regresar a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+#Regresar:hover{
+    background: rgb(178, 188, 248);
+    transition: all 400ms ease;
+}
+.Content{
+    width:50%;
+}
+#Titulo{
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+}
